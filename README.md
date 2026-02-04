@@ -1,72 +1,49 @@
-Project Title--
-
-Analyzing Collision Avoidance Failures in Autonomous Driving Scenarios
-
-
-Background--
-
-Autonomous vehicles must continuously detect surrounding objects and make rapid braking decisions to prevent collisions. While braking systems are designed to activate when collision risk is detected, avoidance is not always successful. Understanding when and why braking fails is critical for improving vehicle safety and decision-making algorithms.
+Project--
+  Autonomous Vehicle Collision Avoidance Analysis
 
 
 Problem Statement--
 
-This project analyzes simulated autonomous driving collision scenarios to identify high-risk object and speed combinations where braking is triggered but collision avoidance fails. The goal is to uncover patterns that can help prioritize safety improvements.
+  Autonomous vehicles must rapidly detect obstacles and initiate braking to avoid collisions. This project analyzes collision scenarios to identify high-risk object and speed combinations             where braking is triggered but avoidance fails.
 
 
-Dataset Description--
+Dataset--
 
-The dataset consists of 10,000 simulated collision scenarios, each representing an interaction between an autonomous vehicle and an external object.
+  10,000 simulated collision scenarios
 
-Key features include:
+  Object type, speed, time-to-collision
 
-Object Type (Car, Motorcycle, Bike, Pedestrian, Truck, Animal)
-
-Object Speed (km/h)
-
-Time to Collision (seconds)
-
-Braking Triggered (Boolean)
-
-Collision Avoided (Boolean)
-
-The dataset was synthetically generated to mimic real-world collision avoidance testing scenarios.
+  Braking and collision avoidance outcomes
 
 
-Business Questions--
+Tools--
 
-This analysis focuses on answering the following questions:
+  SQL (risk aggregation, failure analysis, ranking)
 
-Which object–speed combinations pose the highest collision risk?
+  Python (dataset generation)
 
-Are braking failures driven by high scenario volume or high failure rate?
-
-How does time-to-collision impact braking success?
-
-Which scenarios should be prioritized for safety intervention?
+  Power BI (KPI tracking and visualization)
 
 
 Key Metrics--
 
-The following metrics are used to evaluate system performance:
+  Collision Avoidance Rate (%)
 
-Collision Avoidance Rate (%)
+  Braking Success Rate (%)
 
-Braking Success Rate (%)
+  High-Risk Scenario Percentage (TTC < 2s)
 
-High-Risk Scenario Percentage (TTC < 2 seconds)
-
-Failed Braking Cases (count)
+  Failed Braking Cases
 
 
-Initial Insights--
+Key Insights--
 
-Early analysis reveals that motorcycles at medium speeds exhibit the highest braking failure rates. This indicates a potential detection and timing gap, rather than a pure speed-based risk. In contrast, very high-speed car collisions show expected physical limitations.
+  Car at low speeds showed the highest braking failure rates.
 
+  Very high-speed car collisions reflected expected physical limitations.
 
-Tools Used--
+  Risk was driven more by failure rate than scenario volume.
 
-SQL – Data aggregation, failure analysis, ranking
+Outcome--
 
-Python (Pandas) – Dataset generation and preprocessing
-
-Power BI – Data visualization and dashboard creation
+  The analysis enables prioritization of high-risk scenarios for safety system improvement and monitoring.
