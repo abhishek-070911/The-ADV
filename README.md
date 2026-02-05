@@ -38,8 +38,8 @@ Key Metrics--
 
 Key Insights--
 
-  * Car at low speeds showed the highest braking failure rates.
-
+  * Motorcycles at medium speeds showed the highest braking failure rates
+    
   * Very high-speed car collisions reflected expected physical limitations.
 
   * Risk was driven more by failure rate than scenario volume.
