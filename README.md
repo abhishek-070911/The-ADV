@@ -9,40 +9,40 @@ Problem Statement--
 
 Dataset--
 
-  10,000 simulated collision scenarios
+  * 10,000 simulated collision scenarios
 
-  Object type, speed, time-to-collision
+  * Object type, speed, time-to-collision
 
-  Braking and collision avoidance outcomes
+  * Braking and collision avoidance outcomes
 
 
 Tools--
 
-  SQL (risk aggregation, failure analysis, ranking)
+  * SQL (risk aggregation, failure analysis, ranking)
 
-  Python (dataset generation)
+  * Python (dataset generation)
 
-  Power BI (KPI tracking and visualization)
+  * Power BI (KPI tracking and visualization)
 
 
 Key Metrics--
 
-  Collision Avoidance Rate (%)
+  * Collision Avoidance Rate (%)
 
-  Braking Success Rate (%)
+  * Braking Success Rate (%)
 
-  High-Risk Scenario Percentage (TTC < 2s)
+  * High-Risk Scenario Percentage (TTC < 2s)
 
-  Failed Braking Cases
+  * Failed Braking Cases
 
 
 Key Insights--
 
-  Car at low speeds showed the highest braking failure rates.
+  * Car at low speeds showed the highest braking failure rates.
 
-  Very high-speed car collisions reflected expected physical limitations.
+  * Very high-speed car collisions reflected expected physical limitations.
 
-  Risk was driven more by failure rate than scenario volume.
+  * Risk was driven more by failure rate than scenario volume.
 
 Outcome--
 
