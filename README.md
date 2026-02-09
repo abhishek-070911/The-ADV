@@ -67,31 +67,46 @@ Tools & Technologies--
 
 Analysis Approach--
 
-  1. Data Exploration
+1. Data Exploration
 
-      * Object distribution and scenario frequency analysis
+  * Object distribution and scenario frequency analysis
 
-   2.Performance Measurement
+2.Performance Measurement
 
-      * Collision avoidance and braking success rates
+  * Collision avoidance and braking success rates
 
-    3.Failure Analysis
+3.Failure Analysis
 
-Identification of object–speed combinations with braking failures
+  * Identification of object–speed combinations with braking failures
 
-Risk Prioritization
+4.Risk Prioritization
 
-Failure rate–based ranking to separate high-risk scenarios from high-volume scenarios
+  * Failure rate–based ranking to separate high-risk scenarios from high-volume scenarios
 
 
 Key Insights--
 
-  * Motorcycles at medium speeds showed the highest braking failure rates
-    
-  * Very high-speed car collisions reflected expected physical limitations.
+  * Pedestrians and animals at very low speeds generated the highest number of braking failures due to high occurrence frequency
 
-  * Risk was driven more by failure rate than scenario volume.
+  * Medium-speed motorcycle scenarios exhibited higher braking failure rates, indicating a detection and timing gap rather than pure speed-based risk
+
+  * Very high-speed car collisions reflected expected physical limitations
+
+  * Failure rate proved to be a more actionable metric than raw failure count for safety prioritization
+
+
+Dashboard Highlights--
+
+The Power BI dashboard includes:
+
+  * KPI cards for system performance metrics
+
+  * Heatmap of failed braking cases by object type and speed bucket
+
+  * Failure rate ranking to identify high-risk scenarios
+
+  * TTC distribution to highlight critical time windows
 
 Outcome--
 
-  The analysis enables prioritization of high-risk scenarios for safety system improvement and monitoring.
+  This analysis demonstrates how structured SQL analysis and visualization can uncover non-intuitive safety risks in autonomous driving systems. The findings support prioritized safety interventions, focusing on scenarios with the highest probability of braking failure rather than just frequency.
