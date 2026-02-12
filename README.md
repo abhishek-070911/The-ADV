@@ -101,7 +101,7 @@ The Power BI dashboard includes:
 
   * KPI cards for system performance metrics
 
-  * Heatmap of failed braking cases by object type and speed bucket
+  * Matrix visualization of failed braking cases and failure rate by object type and speed bucket
 
   * Failure rate ranking to identify high-risk scenarios
 
