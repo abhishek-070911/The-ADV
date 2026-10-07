@@ -112,7 +112,7 @@ The Power BI dashboard includes:
 
   * TTC distribution to highlight critical time windows
 
-  Note: the dashboard preview in assets/ comes from an earlier, smaller sample of scenarios. The figures under Key Insights use all 10,000 scenarios.
+  The dashboard reads all 10,000 scenarios from Data/autonomous_collision_analysis_dataset.csv. Power Query derives the speed bucket from Object_speed_kmph with the same cut-offs as the SQL (20, 40, 60 and 80 km/h).
 
 Outcome--
 
