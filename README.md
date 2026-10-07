@@ -86,13 +86,18 @@ Analysis Approach--
 
 Key Insights--
 
-  * Pedestrians and animals at very low speeds generated the highest number of braking failures due to high occurrence frequency
+  * Raw failure counts track scenario volume, not risk: very-low-speed pedestrians and animals
+    are 32.5% of braking cases and 32.4% of failures.
 
-  * Medium-speed motorcycle scenarios exhibited higher braking failure rates, indicating a detection and timing gap rather than pure speed-based risk
+  * Failure rates stay between 35.8% and 49.7% across all 18 object-speed groups. The spread is
+    noise (chi-square p = 0.35): the simulator decides outcomes from time-to-collision alone,
+    so every group's expected failure rate is 42.9%.
 
-  * Very high-speed car collisions reflected expected physical limitations
+  * Overall, 26.3% of scenarios avoided a collision, braking succeeded in 57.1% of triggered
+    cases, and 19.8% of scenarios fell in the high-risk window (TTC < 2 s).
 
-  * Failure rate proved to be a more actionable metric than raw failure count for safety prioritization
+  * Takeaway: rank scenarios by failure rate, and test whether a difference between groups is
+    real before acting on it.
 
 
 Dashboard Highlights--
@@ -107,6 +112,8 @@ The Power BI dashboard includes:
 
   * TTC distribution to highlight critical time windows
 
+  Note: the dashboard preview in assets/ comes from an earlier, smaller sample of scenarios. The figures under Key Insights use all 10,000 scenarios.
+
 Outcome--
 
-  This analysis demonstrates how structured SQL analysis and visualization can uncover non-intuitive safety risks in autonomous driving systems. The findings support prioritized safety interventions, focusing on scenarios with the highest probability of braking failure rather than just frequency.
+  This analysis shows how structured SQL analysis and visualization separate scenario volume from risk, and why a difference between groups should be tested before it drives a safety decision. Because the data is simulated, with outcomes set by time-to-collision alone, it demonstrates the method rather than real-world risk.
